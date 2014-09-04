@@ -2,33 +2,43 @@
 
 use Illuminate\Support\ServiceProvider;
 
-class PermissionsServiceProvider extends ServiceProvider {
+/**
+ * PermissionsServiceProvider
+ *
+ * @uses    ServiceProvider
+ * @package Aeolu\Permissions
+ * @author  Jaggy Gauran<jaggygauran@gmail.com>
+ * @license http://www.wtfpl.net/ Do What the Fuck You Want to Public License
+ * @version 0.1.0
+ * @since   Class available since Release 0.1.0
+ */
+class PermissionsServiceProvider extends ServiceProvider
+{
 
-	/**
-	 * Indicates if loading of the provider is deferred.
-	 *
-	 * @var bool
-	 */
-	protected $defer = false;
+    /**
+     * Indicates if loading of the provider is deferred.
+     *
+     * @var bool
+     */
+    protected $defer = false;
 
-	/**
-	 * Register the service provider.
-	 *
-	 * @return void
-	 */
-	public function register()
-	{
-		//
-	}
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+    }
 
-	/**
-	 * Get the services provided by the provider.
-	 *
-	 * @return array
-	 */
-	public function provides()
-	{
-		return array();
-	}
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return [];
+    }
 
 }
