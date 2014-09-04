@@ -1,10 +1,10 @@
 {
     "name": "aeolu/permissions",
-    "description": "",
+    "description": "An ACL implementation for Laravel",
     "authors": [
         {
-            "name": "",
-            "email": ""
+            "name": "Jaggy Gauran",
+            "email": "jaggygauran@gmail.com"
         }
     ],
     "require": {
