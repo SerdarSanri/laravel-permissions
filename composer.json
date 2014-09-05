@@ -12,6 +12,10 @@
         "illuminate/support": "4.2.*"
     },
     "autoload": {
+        "classmap": [
+            "./src/migrations/",
+            "./src/seeds/"
+        ],
         "psr-0": {
             "Aeolu\\Permissions": "src/"
         }
