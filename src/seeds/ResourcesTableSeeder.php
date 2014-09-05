@@ -1,5 +1,7 @@
 <?php
 
+use Aeolu\Permissions\Models\Resource;
+
 class ResourcesTableSeeder extends Seeder
 {
 
@@ -28,6 +30,8 @@ class ResourcesTableSeeder extends Seeder
                 'url'       => $route->getPath(),
                 'parent_id' => $parent->id
             ];
+
+            $children[] = $child;
         }
 
         DB::table('resources')->insert($children);

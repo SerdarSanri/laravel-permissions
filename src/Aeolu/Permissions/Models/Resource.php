@@ -25,6 +25,14 @@ class Resource extends Eloquent
     protected $table = 'resources';
 
     /**
+     * Mass Assignment
+     *
+     * @var    array
+     * @access protected
+     */
+    protected $fillable = ['name', 'action', 'url', 'parent_id'];
+
+    /**
      * No timestamps
      *
      * @var    boolean
