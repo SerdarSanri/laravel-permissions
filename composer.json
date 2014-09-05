@@ -1,5 +1,6 @@
 {
     "name": "aeolu/permissions",
+    "license": "wtfpl",
     "description": "An ACL implementation for Laravel",
     "authors": [
         {
