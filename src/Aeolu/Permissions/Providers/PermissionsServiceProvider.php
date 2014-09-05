@@ -1,12 +1,14 @@
-<?php namespace Aeolu\Permissions;
+<?php
+namespace Aeolu\Permissions\Providers;
 
+use Route;
 use Illuminate\Support\ServiceProvider;
 
 /**
  * PermissionsServiceProvider
  *
  * @uses    ServiceProvider
- * @package Aeolu\Permissions
+ * @package Aeolu\Permissions\ServiceProvider
  * @author  Jaggy Gauran<jaggygauran@gmail.com>
  * @license http://www.wtfpl.net/ Do What the Fuck You Want to Public License
  * @version 0.1.0
@@ -29,6 +31,7 @@ class PermissionsServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        Route::filter('permissions', 'Aeolu\Permissions\Filters\PermissionsFilter');
     }
 
     /**
