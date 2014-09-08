@@ -1,6 +1,8 @@
 <?php
 use Aeolu\Permissions\Models;
 
+use Eloquent;
+
 /**
  * Role Model
  *
