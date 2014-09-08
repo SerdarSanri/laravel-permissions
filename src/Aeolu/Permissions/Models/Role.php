@@ -1,5 +1,5 @@
 <?php
-use Aeolu\Permissions\Models;
+namespace Aeolu\Permissions\Models;
 
 use Eloquent;
 
